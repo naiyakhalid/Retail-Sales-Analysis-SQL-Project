@@ -72,6 +72,7 @@ GROUP BY category;
 1. Clone this repository:
    ```bash
    git clone https://github.com/naiyakhalid/sql-retail-sales-analysis.git
+
 2. Import the SQL scripts into your database (SQL Server recommended).
 3. Run the queries in order to create, clean, and analyze the dataset.
 4. Explore insights using the provided analysis queries.
