@@ -1,17 +1,15 @@
-### 🧑‍💻 Author
-```markdown
+# 🛒 SQL Retail Sales Analysis
+
+This project is a **SQL-based retail sales analysis** case study.  
+The main goal is to explore, clean, and analyze a retail sales dataset using SQL queries.  
+It covers **data creation, cleaning, exploration, and answering key business questions**.
+
 ## 🧑‍💻 Author
 **Naiya Khalid**  
 📩 [naiyakhalid@gmail.com](mailto:naiyakhalid@gmail.com)  
 🌐 [LinkedIn](https://www.linkedin.com/in/naiya-khalid-510981130/)  
 🌐 [GitHub](https://github.com/naiyakhalid)  
 🌐 [Kaggle](https://www.kaggle.com/naiyakhalid)
-
-# 🛒 SQL Retail Sales Analysis
-
-This project is a **SQL-based retail sales analysis** case study.  
-The main goal is to explore, clean, and analyze a retail sales dataset using SQL queries.  
-It covers **data creation, cleaning, exploration, and answering key business questions**.
 
 ## 📂 Project Overview
 - **Database:** `sql_project_p2`
@@ -60,6 +58,7 @@ It covers **data creation, cleaning, exploration, and answering key business que
 SELECT category, SUM(total_sale) AS Net_Sales, COUNT(*) AS Total_orders
 FROM Retail_Sales_Analysis
 GROUP BY category;
+```
 
 ## 📌 Key Insights
 - Total Sales: $913,088 across 2,000 transactions.
@@ -72,7 +71,7 @@ GROUP BY category;
 1. Clone this repository:
    ```bash
    git clone https://github.com/naiyakhalid/sql-retail-sales-analysis.git
-
+```
 2. Import the SQL scripts into your database (SQL Server recommended).
 3. Run the queries in order to create, clean, and analyze the dataset.
 4. Explore insights using the provided analysis queries.
