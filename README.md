@@ -1,5 +1,4 @@
 # 🛒 SQL Retail Sales Analysis
-
 This project is a **SQL-based retail sales analysis** case study.  
 The main goal is to explore, clean, and analyze a retail sales dataset using SQL queries.  
 It covers **data creation, cleaning, exploration, and answering key business questions**.
