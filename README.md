@@ -68,6 +68,29 @@ SELECT category, SUM(total_sale) AS Net_Sales, COUNT(*) AS Total_orders
 FROM Retail_Sales_Analysis
 GROUP BY category;
 ```
+### 2. Top customers
+```sql
+SELECT TOP 5 customer_id, SUM(total_sale) AS total_sales
+FROM Retail_Sales_Analysis
+GROUP BY customer_id ORDER BY total_sales DESC;
+```
+
+### 3. Sales shifts
+```sql
+WITH hourly_sale AS 
+(
+SELECT *, 
+  CASE
+      WHEN DATEPART(HOUR, sale_time) < 12 THEN  'Morning'
+      WHEN DATEPART(HOUR, sale_time)  BETWEEN 12 AND 17 THEN  'Afternoon'
+      ELSE 'Evening'
+END AS Shift
+FROM Retail_Sales_Analysis 
+WHERE sale_time IS NOT NULL
+)
+SELECT shift, COUNT(*) AS total_orders FROM hourly_sale
+GROUP BY shift
+```
 
 ## 📌 Key Insights
 - **Total Sales:** $913,088 across 2,000 transactions.
@@ -76,12 +99,14 @@ GROUP BY category;
 - **Top Customers:** A few high-value customers contributed significantly to sales.
 - **Shifts:** Sales activity can be segmented into Morning, Afternoon, and Evening.
 
-## 🚀 How to Use
-1. Clone this repository:
+## 🚀 How to Use/Reproduce
+1. Download/Clone this repository:
    ```bash
    git clone https://github.com/naiyakhalid/sql-retail-sales-analysis.git
 ```
-2. Import the SQL scripts into your database (SQL Server recommended).
-3. Run the queries in order to create, clean, and analyze the dataset.
+2. Open SQL Server/Azure Data Studio.
+3. Create the database.
+4. Import Retail_Sales_Data.csv into the table.
+5. Run the queries in order to create, clean, and analyze the dataset.
 4. Explore insights using the provided analysis queries.
 
