@@ -11,15 +11,22 @@ This project is a SQL-based retail sales analysis case study. The main goal is t
 🌐 [Kaggle](https://www.kaggle.com/naiyakhalid)
 
 ## 📂 Project Overview
-- **Database:** `sql_project_p2`
-- **Table:** `retail_sales`
-- **Records:** 2,000 transactions  
-- **Customers:** 155 unique customers  
-- **Categories:** 3 (Clothing, Electronics, Beauty)  
-- **Total Sales:** \$913,088  
-- **Total Items Sold:** 5,024  
+## SQL • Data Cleaning • Exploratory Analysis • Business Analytics
+An end-to-end SQL analysis of 2,000 retail transactions, covering data cleaning, exploratory analysis and business-focused questions around sales, customers, categories and purchasing patterns.
 
-## 🛠️ Features Implemented
+| Project Scope         |       Project Details              |
+| --------------        | ---------------------------------- |
+| **Database:**         | 'SQL_Project_1'.                   |
+| **Table:**            | `Retail_Sales_Analysis`            |
+| **Records:**          | 2,000 retail transactions          |
+| **Customers**         | 155 unique customers               |
+| **Categories:**       | 3 (Clothing, Electronics, Beauty)  |
+| **Total Sales:**      | \$913,088                          |
+| **Total Items Sold:** | 5,024                              |
+| **Database**          | SQL Server                         |
+| **Tools**             | SQL, Azure Data Studio             | 
+
+## 🛠️ Features Implemented: 
 
 ### 1. Database & Table Creation
 - Created a retail sales table with fields such as `transaction_id`, `sale_date`, `sale_time`, `customer_id`, `gender`, `age`, `category`, `quantity`, `price_per_unit`, `cogs`, and `total_sale`.
@@ -32,12 +39,15 @@ This project is a SQL-based retail sales analysis case study. The main goal is t
   - `price_per_unit`
   - `cogs`
   - `total_sale`
+  - Validated the resulting dataset
 
-### 3. Data Exploration
+### 3. Exploratory analysis
 - Total transactions, customers, categories, and sales.
 - Gender distribution.
 - Quantity of items sold.
 - Summary statistics of sales.
+- Customer counts
+- Category performance
 
 ### 4. Business Problem Queries
 - Retrieve sales on a specific date.
@@ -60,11 +70,11 @@ GROUP BY category;
 ```
 
 ## 📌 Key Insights
-- Total Sales: $913,088 across 2,000 transactions.
-- Customers: 155 unique customers, equally split between Male & Female.
-- Categories: 3 main categories with Clothing showing higher transaction counts.
-- Top Customers: A few high-value customers contributed significantly to sales.
-- Shifts: Sales activity can be segmented into Morning, Afternoon, and Evening.
+- **Total Sales:** $913,088 across 2,000 transactions.
+- **Customers:** 155 unique customers, equally split between Male & Female.
+- **Categories:** 3 main categories with Clothing showing higher transaction counts.
+- **Top Customers:** A few high-value customers contributed significantly to sales.
+- **Shifts:** Sales activity can be segmented into Morning, Afternoon, and Evening.
 
 ## 🚀 How to Use
 1. Clone this repository:
